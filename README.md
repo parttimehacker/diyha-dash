@@ -35,3 +35,16 @@ enter
         WSGIProcessGroup django
         WSGIScriptAlias / /home/pi/pidjango/pidjango/wsgi.py
 ```
+git clone the repository
+```
+git clone
+```
+create static director
+```
+cd diyha-dash
+mkdir static
+```
+install django
+```
+sudo python3 -m pip install django
+```
