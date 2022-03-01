@@ -20,26 +20,26 @@ sudo vi /etc/apache2/sites-enabled/000-default.conf
 ```
 enter 
 ```
-        Alias /static /home/pi/pidjango/static
-        <Directory /home/pi/pidjango/static>
-                Require all granted
-        </Directory>
+Alias /static /home/pi/pidjango/static
+<Directory /home/pi/pidjango/static>
+   Require all granted
+</Directory>
 
-        <Directory /home/pi/pidjango/pidjango>
-                <Files wsgi.py>
-                        Require all granted
-                </Files>
-        </Directory>
+<Directory /home/pi/pidjango/pidjango>
+   <Files wsgi.py>
+        Require all granted
+   </Files>
+</Directory>
 
-        WSGIDaemonProcess django python-path=/home/pi/pidjango python-home=/home/pi/pidjango/djenv
-        WSGIProcessGroup django
-        WSGIScriptAlias / /home/pi/pidjango/pidjango/wsgi.py
+WSGIDaemonProcess django python-path=/home/pi/pidjango python-home=/home/pi/pidjango/djenv
+WSGIProcessGroup django
+WSGIScriptAlias / /home/pi/pidjango/pidjango/wsgi.py
 ```
-git clone the repository
+## git clone the repository
 ```
 git clone
 ```
-create static director
+create static directory
 ```
 cd diyha-dash
 mkdir static
