@@ -1,4 +1,8 @@
 # diyha-dash
+
+Great instructions in 
+https://pimylifeup.com/raspberry-pi-apache/
+
 Django web server
 Install apache2
 ```
